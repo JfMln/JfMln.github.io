@@ -1,0 +1,17 @@
+@import url(../css/navbar.css);
+@import url(../css/style.css);
+
+.globale{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.ML{
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    color:lightgray;
+    justify-content: center;
+}

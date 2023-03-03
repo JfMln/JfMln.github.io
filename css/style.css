@@ -317,3 +317,21 @@
     background-color: #007fb1;
     background-image: url("https://benhodgson.net/img/social/linkedin.svg");
   }
+
+
+  /*Footer*/
+
+  footer{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    background-color: var(--c-bleu);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  footer p a{
+    color:white;
+    font-size: 20px;
+  }
