@@ -40,7 +40,7 @@
 
 .navigation {
     position: relative;
-    height: 8vh;
+    height: 7.9vh;
     background: var(--c-bleu);
     z-index: 999;
 }
