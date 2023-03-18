@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-    
-        <section class="navigation">
-            <div class="nav-container">
-                <div class="brand">
-                    <!-- <a href=""><img src="../Ressources/Images/sio.png" style="width: 100px;height:50px;"></a> -->
-                </div>
-                <nav>
-                    <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
-                    <ul class="nav-list">
+
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <!-- <a href=""><img src="../Ressources/Images/sio.png" style="width: 100px;height:50px;"></a> -->
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
                     <li>
-                        <a href="../index.html">Accueil</a></li>
-                    
+                        <a href="../index.html">Accueil</a>
+                    </li>
+
                     <li>
                         <a href="./index.html#competences">Compétences</a>
                     </li>
@@ -34,186 +37,225 @@
                     <li>
                         <a href="./index.html#contact">Contact</a>
                     </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
+                </ul>
+            </nav>
+        </div>
+    </section>
 
 
-        <section class="menu">
+    <section class="menu">
 
-            <h3 data-reveal="left">Bienvenue sur le Portfolio de Jean-François Moulin</h3>
-        
-        </section>
+        <h3 data-reveal="left">Bienvenue sur le Portfolio de Jean-François Moulin</h3>
 
-        <section class="section">
-            <div class="image-box" data-reveal="left">
-              <img src="./ressources/ordi.jpg" alt="" class="img">
-            </div>
-            <div class="content-box">
-              <h2 class="title" data-reveal="left">
-                A propos de moi : 
-              </h2>
-              <p class="text" data-reveal="left">
-                Actuellement étudiant en deuxième année de Bts Sio au LTPES Saint-Luc.<br>
-                Je recherche une alternance afin de pouvoir effectuer <br>mon Bachelor Concepteur Développeur Nouvelles Technologies
-              </p>
-            </div>
-          </section>
+    </section>
+
+    <section class="section">
+        <div class="image-box" data-reveal="left">
+            <img src="./ressources/ordi.jpg" alt="" class="img">
+        </div>
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                À propos de moi :
+            </h2>
+            <p class="text" data-reveal="left">
+                Actuellement étudiant en deuxième année de Bts Sio au LTPES <br>Saint-Luc.<br>
+                Je recherche une alternance afin de pouvoir effectuer <br>mon Bachelor Concepteur Développeur Nouvelles Technologies à <a href="https://www.aston-ecole.com/" style="color:white; text-decoration: underline;">Aston</a> , situé à Lille.
+            </p>
+        </div>
+    </section>
 
 
-<section class="competences" id="competences" data-reveal="left">
+    <section class="competences" id="competences" data-reveal="left">
 
-    <h2>Compétences</h2>
+        <h2>Compétences</h2>
 
-    <div class="container">
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Dev</h3>
+        <div class="container">
+            <div class="card" onclick=card1()>
+                <div class="face face1" id="face1">
+                    <div class="content" id="content1">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Dev</h3>
+                    </div>
+                </div>
+                <div class="face face2" id="texte1">
+                    <div class="content">
+                        <p>Je dispose des compétences de développement suivantes:
+                            <br>-Compétences Web: Html Css JavaScript
+                            <br>- Java
+                            <br>- Python
+                            <br>- Php
+                        </p>
+
+                    </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Je dispose des compétences de développement suivantes: 
-                        <br>-Compétences Web: Html Css JavaScript
-                        <br>- Java
-                        <br>- Python
-                        <br>- Php
-                    </p>
-                        
+
+
+
+
+
+
+
+
+
+            <div class="card" id="card2" onclick=card2()>
+                <div class="face face1" id="face2">
+                    <div class="content" id="content2">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Cyber</h3>
+                    </div>
+                </div>
+                <div class="face face2" id="texte2">
+                    <div class="content">
+                        <p>Je dispose des compétences de cybersécurité suivantes:
+                            <br>- RGPD
+                            <br>- Bonne pratiques
+                            <br>- Pia
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="card3" onclick=card3()>
+                <div class="face face1" id="face3">
+                    <div class="content" id="content3">
+                        <img
+                            src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
+                        <h3>Autres</h3>
+                    </div>
+                </div>
+                <div class="face face2" id="texte3">
+                    <div class="content">
+                        <p>Je dispose également d'autres compétences informatique :
+                            <br> - Sql , MariaDB
+                            <br> - Compétences de base Windows
+                        </p>
+
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Cyber</h3>
+    </section>
+
+
+    <section class="mesprod">
+        <div class="bandeau">
+            <div class="titre"> <h2>Productions</h2></div>
+            
+                <ul>
+                    <li id="Stage" onclick=ST()>Stage SIO</li>
+                    <li id="AP" onclick=AP()>AP</li>
+                    <li id="Prod" onclick=PR()>Productions B2</li>
+                </ul>
+            
+            <div class="contenu-bandeau" id="sta-visu">
+                <div class="ligne1">
+                    <p>Production du site du <span class="red" id="sio" onclick=lien() style="cursor:pointer;">Bts SIO</span> du LTPES Saint-Luc lors du stage de deuxième année d'une durée de 5 semaines </p>
+                </div>
+                <div class="ligne2">
+                    <a href="https://saintluc.btssio.fr" target="_blank"><img src="./ressources/sio.png" alt=""class="img" style="object-fit: cover; height: 100%; width: 100%;"></a>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Je dispose des compétences de cybersécurité suivantes:
-                  <br>- RGPD
-                  <br>- Bonne pratiques
-                  <br>- Pia
-                    </p>
-                        
+            <div class="contenu-bandeau" id="prod-visu">
+                <div class="ligne1">
+                <p>Divers production en annexe du BtsSio </p>
                 </div>
             </div>
+            <div class="contenu-bandeau" id="AP-visu">
+                <div class="ligne1">
+                    <p>Production d'un site de préadmission d'une clinique dans le cadre de l'atelier de professionnalisation du Bts SIO </p>
+                    </div>
+            </div>
+
+
+
         </div>
-        <div class="card">
-            <div class="face face1">
-                <div class="content">
-                    <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true">
-                    <h3>Autres</h3>
+    </section>
+
+
+
+  
+
+
+
+
+
+    <section class="section" id="CV">
+        <div class="content-box">
+            <h2 class="title" data-reveal="left">
+                Mon CV :
+            </h2>
+        </div>
+        <div class="image-box" data-reveal="left">
+            <!-- <iframe src="./ressources/CV.pdf" style="width: 100%;height: 100%;"></iframe>  -->
+            <a href="./ressources/CV.pdf" download target="_blank"><img src="./ressources/CV.jpg"
+                    style="object-fit: contain; height:100%; width:100%;"></a>
+        </div>
+
+    </section>
+
+
+    <section class="contact" id="contact" data-reveal="left">
+
+
+        <h2>Contactez-Moi !</h2>
+        <div class="conteneur">
+            <div class="carte">
+                <div class="contenu-carte">
+                    <div class="ligne1">
+                        Mail
+                    </div>
+                    <div class="ligne2">
+                        <a href="mailto:jfmln4@gmail.com"> Contactez-moi par Mail</a>
+                    </div>
                 </div>
             </div>
-            <div class="face face2">
-                <div class="content">
-                    <p>Je dispose également d'autres compétences informatique :
-                        <br> - Sql , MariaDB
-                        <br> - Compétences de base Windows
-                                            </p>
-                        
+
+            <div class="carte">
+                <div class="contenu-carte">
+                    <div class="ligne1">
+                        Téléphone
+                    </div>
+                    <div class="ligne2">
+                        <a href="tel:+33680349588">Contactez-moi au 06 80 34 95 88</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="section" id="creation">
-
-    <div class="content-box">
-        <h2 class="title" data-reveal="left">
-          Mes productions :
-        </h2>
-        <p class="text" data-reveal="left">
-          Production du site du Bts SIO du LTPES Saint-Luc lors du stage de deuxième année d'une durée de 5 semaines 
-        </p>
-      </div>
-    <div class="image-box" data-reveal="left">
-      <a href="https://saintluc.btssio.fr" target="_blank"><img src="./ressources/sio.png" alt=""class="img" style="object-fit: contain;"></a>
-    </div>
-   
-  </section>
-
-
-
-
-
-<section class="section" id="CV">
-    <div class="content-box">
-        <h2 class="title" data-reveal="left">
-          Mon CV :
-        </h2>
-      </div>
-    <div class="image-box" data-reveal="left">
-         <!-- <iframe src="./ressources/CV.pdf" style="width: 100%;height: 100%;"></iframe>  -->
-        <a href="./ressources/CV.pdf" download target="_blank"><img src="./ressources/CV.jpg" style="object-fit: contain; height:100%; width:100%;"></a>
-    </div>
-   
-  </section>
-
-
-<section class="contact" id="contact" data-reveal="left">
-
-
-<h2>Contactez-Moi !</h2>
-<div class="conteneur">
-    <div class="carte">
-        <div class="contenu-carte">  
-            <div class="ligne1">
-                Mail
-            </div>
-            <div class="ligne2">
-                <a href="mailto:jfmln4@gmail.com"> Contactez-moi par Mail</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="carte">
-        <div class="contenu-carte"> 
-            <div class="ligne1">
-                Téléphone
-            </div>
-            <div class="ligne2">
-                <a href="tel:+33680349588">Contactez-moi au 06 80 34 95 88</a>
-            </div>
-        </div>
-    </div>
-    <div class="carte">
-        <div class="contenu-carte">  
-            <div class="ligne1">
-                Réseaux Sociaux
-            </div>
-            <div class="ligne2" class="social">  
-                <ul class="social-icons" style="width:100px;">
-                    <li class="icon icon--linkedin">
-                        <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-moulin-93a324227/"target="_blank">
-                            <span class="icon__name">LinkedIn</span>
-                        </a>
-                    </li>
-                    <!-- <li class="icon icon--github">
+            <div class="carte">
+                <div class="contenu-carte">
+                    <div class="ligne1">
+                        Réseaux Sociaux
+                    </div>
+                    <div class="ligne2" class="social">
+                        <ul class="social-icons" style="width:100px;">
+                            <li class="icon icon--linkedin">
+                                <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-moulin-93a324227/"
+                                    target="_blank">
+                                    <span class="icon__name">LinkedIn</span>
+                                </a>
+                            </li>
+                            <!-- <li class="icon icon--github">
                         <a href="#">
                           <span class="icon__name">GitHub</span>
                         </a>
                       </li> -->
-                </ul>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
 
 
-    
-</section>
 
-<footer>
-    <p><a href="./ML/cgu.html">Mentions Légales & CGU</a></p>
+    </section>
 
-</footer>
+    <footer>
+        <p><a href="./ML/cgu.html">Mentions Légales & CGU</a></p>
+
+    </footer>
 
 </body>
+
 </html>
