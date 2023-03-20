@@ -4,12 +4,13 @@
   margin: 0;
   display: flex;
   width: 100%;
-  height: 92vh;
+  height: 94vh;
   justify-content: left;
   padding-left: 70px;
   align-items: center;
   background-image: url(../ressources/back.png);
   background-size: cover;
+
 }
 
 .menu h3 {
@@ -568,13 +569,24 @@ footer p a {
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
   .bandeau .contenu-bandeau {
     flex-direction: column;
   }
-  .menu h3{
-    font-size: max(1vw,6vw);
+
+  .menu h3 {
+    font-size: max(1vw, 6vw);
     text-align: center;
+    backdrop-filter: blur(4px);
+    max-width: 100vw;
+    padding:1rem 0 1rem 0;
+  }
+
+  .menu {
+    object-fit: cover;
+    background-position: right;
+    justify-content: center;
+    padding: 0;
   }
 
 }

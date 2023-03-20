@@ -2,6 +2,7 @@
     --c-blanc : rgb(221, 221, 221);
     --c-shadow : #2c2c2c96;    
     --c-bleu: hsl(0, 0%, 8%);
+    --c-bleu2: #1400FF;
     --c-lightblue: #003566;
     --c-jone:#ffd60a;
     --c-couleur2: rgb(240, 240, 240);
@@ -40,8 +41,8 @@
 
 .navigation {
     position: relative;
-    height: 7.9vh;
-    background: var(--c-bleu);
+    height: 6vh;
+    background:transparent;
     z-index: 999;
 }
 
@@ -85,7 +86,7 @@ nav ul li a:visited {
     line-height: 55px;
     font-size: 17px;
     color: #fff;
-    background: var(--c-bleu);
+    background: var(--c-bleu2);
     text-decoration: none;
     font-family: 'Josefin', sans-serif;
 }
@@ -102,7 +103,7 @@ nav ul li a:visited:hover {
 }
 
 .navbar-dropdown li a {
-    background: var(--c-bleu);
+    background: var(--c-bleu2);
 }
 
 nav ul li a:not(:only-child):after,
