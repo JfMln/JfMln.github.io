@@ -25,7 +25,7 @@ function card1() {
   active();
   setTimeout(function () {
     desactive();
-  }, 60000);
+  }, 30000);
 }
 
 function card2() {
@@ -34,7 +34,7 @@ function card2() {
   active();
   setTimeout(function () {
     desactive();
-  }, 60000);
+  }, 30000);
 }
 
 function card3() {
@@ -43,7 +43,7 @@ function card3() {
   active();
   setTimeout(function () {
     desactive();
-  }, 60000);
+  }, 30000);
 }
 
 function active() {
@@ -51,10 +51,13 @@ function active() {
   const face = document.getElementById("face" + valeur);
   const content = document.getElementById("content" + valeur);
   texte.style.transform = "translateY(0)";
-  face.style.background = "var(--c-red)";
+  face.style.background = "var(--c-lightblue)";
   face.style.transform = "translateY(0)";
   content.style.opacity = "1";
   content.style.transition = "0.5s";
+  texte.style.cursor = "default";
+  face.style.cursor = "default";
+  content.style.cursor = "default";
 }
 
 function desactive() {
@@ -69,6 +72,9 @@ function desactive() {
     face.style.transform = "translateY(100px)";
     content.style.opacity = "0.2";
     content.style.transition = "0.5s";
+    content.style.cursor = "pointer";
+    texte.style.cursor = "pointer";
+    face.style.cursor="pointer";
   }
 }
 
@@ -108,7 +114,7 @@ function PR() {
 function bandeau() {
   document.getElementById(valeur + '-visu').style.display = "flex";
   document.getElementById(valeur + '-visu').style.transition = "all 0.5s ease";
-  document.getElementById(v).style.backgroundColor = "var(--c-red)";
+  document.getElementById(v).style.backgroundColor = "var(--c-lightblue)";
   document.getElementById(v).style.borderTopLeftRadius ="5px";
   document.getElementById(v).style.borderTopRightRadius ="5px";
 }
@@ -127,5 +133,4 @@ function desactiveBandeau() {
 }
 function lien(){
   window.open('https://saintluc.btssio.fr', '_blank');
-
 }

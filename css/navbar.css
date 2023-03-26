@@ -3,12 +3,14 @@
     --c-shadow : #2c2c2c96;    
     --c-bleu: hsl(0, 0%, 8%);
     --c-bleu2: #1400FF;
-    --c-lightblue: #003566;
+    --c-lightblue: #005aad;
     --c-jone:#ffd60a;
     --c-couleur2: rgb(240, 240, 240);
     --s-shadow:-2px 2px 10px 5px #4e4e4e49;
     --c-gold:rgb(207, 152, 13);
     --c-red:#da0303c9;
+    --s-couleurshadow2: rgb(46, 46, 46);
+    --s-shadow2: 3px 3px 10px var(--s-couleurshadow2),-3px -3px 10px var(--s-couleurshadow2), -3px 3px 10px var(--s-couleurshadow2),3px -3px 10px var(--s-couleurshadow2); 
 }
 
 * {
@@ -86,7 +88,6 @@ nav ul li a:visited {
     line-height: 55px;
     font-size: 17px;
     color: #fff;
-    background: var(--c-bleu2);
     text-decoration: none;
     font-family: 'Josefin', sans-serif;
 }
