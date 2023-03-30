@@ -245,6 +245,10 @@ body {
   font-size: 50px;
 }
 
+.competences .conteneur .carte .ligne2{
+  text-align: center;
+}
+
 .container {
   width: 100%;
   max-width: 1500px;
@@ -484,6 +488,7 @@ body {
   align-items: center;
   flex-direction: column;
   padding:2rem;
+  gap:40px;
 }
 
 .veille h2{
@@ -498,12 +503,20 @@ body {
   font-size: max(2vw, 20px);
 }
 
+.veille h4{
+  font-size: max(1vw,18px);
+  font-family: 'josefin',sans-serif;
+  text-align: center;
+  
+}
+
 
 .veille .articles{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap:35px;
 }
 
@@ -529,7 +542,16 @@ body {
 
 .veille .articles .bloc .texte{
   display: flex;
+  flex-direction: column;
   width: 100%;
+  gap:15px;
+}
+
+.veille p{
+  display: flex;
+  text-align: center;
+  font-size: max(1vw,15px);
+  font-family: 'josefin', sans-serif;
 }
 
 
