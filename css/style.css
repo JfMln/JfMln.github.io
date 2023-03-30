@@ -335,7 +335,6 @@ body {
 /*CONTACT*/
 
 .contact {
-  margin: 80px auto;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -495,7 +494,6 @@ body {
   padding:1rem;
   font-size: max(2vw,30px);
   font-family: 'Josefin', sans-serif;
-  
 }
 
 .veille h3{
@@ -509,7 +507,6 @@ body {
   text-align: center;
   
 }
-
 
 .veille .articles{
   width: 100%;
@@ -561,9 +558,29 @@ body {
   object-fit: cover;
 }
 
+.veille .tableau{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+}
 
+.veille .tableau input{
+  display: flex;
+  padding:1rem;
+  background-color: #333;
+  color:white;
+  font-family: 'josefin',sans-serif;
+  font-size: max(1vw,30px);
+  transition:0.5s all ease;
+  box-shadow: var(--c-shadow);
+}
 
-
+.veille .tableau input:hover{
+  cursor: pointer;
+  background-color:var(--c-lightblue);
+  transition:0.5s all ease;
+}
 
 
 
