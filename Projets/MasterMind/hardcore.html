@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/script3.js"></script>
+    
+    
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="globale" style="background-color: rgb(139, 3, 3);">
+
+        
+ <div class="game">
+    
+    <div class="info">
+
+        <div class="column">
+            <div class="logo"> <img src="./ressource/sioMastermind.png" style="object-fit: cover; width:100%; "></div>
+            <div class="retour"><a href="./index.html"><input type="button" value="Retour au Menu"></a></div>
+            
+        </div>
+        <div class="etat" >
+
+            <p id="etat">  </p>
+        </div>
+
+    </div>
+
+
+    <div class="jeu">
+    <div class="ecran">
+        <h3>MODE HARDCORE</h3>
+        <!-- c'est des cases  -->
+    <div class="ligne">
+        <div id="1" class="case" ></div>
+        <div id="2" class="case" ></div>
+        <div id="3" class="case" ></div>
+        <div id="4" class="case" ></div>
+    </div>
+
+    <div class="ligne">
+        <div id="5" class="case" ></div>
+        <div id="6" class="case" ></div>
+        <div id="7" class="case" ></div>
+        <div id="8" class="case" ></div>
+    </div>
+
+    <div class="ligne">
+        <div id="9" class="case" ></div>
+        <div id="10" class="case" ></div>
+        <div id="11" class="case" ></div>
+        <div id="12" class="case" ></div>
+    </div>
+    </div>
+
+
+    <div class="colors">
+        <div class="ligne">
+            <!-- c'est des case mais colorées -->
+            <div id="green" class="color-choice" onclick="btngreen()" ></div>
+            <div id="blue" class="color-choice" onclick="btnblue()"></div>
+            <div id="red" class="color-choice" onclick="btnred()"></div>
+            <div id="orange" class="color-choice" onclick="btnorange()"></div>
+        </div>
+    </div>
+<!-- et ça c'est un bouton -->
+<input type="submit" value ="Reset" onclick="reset()">
+</div>
+ </div>
+</div>
+</body>
+</html>

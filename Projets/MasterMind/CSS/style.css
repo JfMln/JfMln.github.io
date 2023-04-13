@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Press+Start+2P&display=swap');
+
+* {
+    overflow-x: none;
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    /* border: 0 none; */
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
+    list-style: none;
+     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-y:hidden;
+}
+
+:root{
+    --c-noir:#1e1e1e;
+    --c-bleu:#001d3d;
+    --s-shadow:-1px 1px 5px 4px #4e4e4e49, 1px 1px 5px 4px #4e4e4e49;
+    --c-gold:rgb(207, 152, 13);
+}
+.globale{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;    
+    padding:1rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--c-bleu);
+}
+
+.jeu{
+  display: flex;
+  width: 100%;
+  max-width: 450px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:1px solid white;
+}
+
+.ecran{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;   
+    padding-top:1rem;
+    padding-bottom:1rem;  
+    gap:10px;
+    border:1px solid white;
+}
+
+.info{
+  display: flex;
+  width: 830px;
+  height: 500px;
+  padding:1rem;
+}
+
+.info .retour{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  max-width: 500px;
+  height: 200px;
+}
+
+.info .logo{
+  display: flex;
+  max-width: 500px;
+  width: 95%;
+  height: 300px;
+}
+
+.info .etat{
+  display: flex;
+  flex-direction: column;
+  border:1px solid var(--c-gold);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  color:white;
+
+}
+
+
+
+.info .column .retour input{
+  display: flex;
+  width: 100%;
+
+}
+
+.game{
+    display:flex;
+    width: 100%;
+    max-width: 1800px;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+.game .info .column{
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game .ecran .ligne{
+    display:flex;
+    width: 100%;
+    max-width: 1200px;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game .ligne .case{
+    display:flex;
+    width: 100%;
+    max-width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.game .colors{
+    display:flex;
+    width: 100%;
+    max-width: 1200px;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game .jeu .ecran h3{
+  font-size: 30px;
+  color:white;
+  text-shadow: orange 2px 5px;;
+  font-family: 'Press Start 2P', cursive;
+}
+
+
+.color-choice {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  
+  .color-choice:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .color-choice:active {
+    opacity: 0.8;
+  }
+  
+  #green {
+    background-color: green;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #red {
+    background-color: red;
+  }
+  
+  #orange {
+    background-color: orange;
+  }
+  
+input{
+    padding:1rem;
+}
+
